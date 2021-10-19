@@ -1,0 +1,13 @@
+body{
+    display:grid;
+    grid-template-columns: 100px 800px 100px;
+    grid-template-rows: 200px auto 200px;
+    grid-template-areas: "Titulo Titulo Titulo"
+                        ". contenido ."
+                        "footer footer footer"
+}
+#Titulo{
+    grid-area: Titulo;
+}
+#contenido{grid-area: contenido;}
+#footer{grid-area: footer;}
